@@ -45,6 +45,8 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
   - PORT: 2121 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
  ---
+ Also - it would be super if you got your own API key for imdb-api.com, this one will only handle 100 requests a day.
+ They are free
  
  Have fun testing and improving it! 😎
 
