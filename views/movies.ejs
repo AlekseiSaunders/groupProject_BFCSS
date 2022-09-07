@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Your Movies</h1>
+    <ul class='yourMovies'>
+    <% movies.forEach( el => { %>
+            <li class='movieItem' data-id='<%=el._id%>'>
+                <span class='<%= el.watched === true ? 'completed' : 'not'%>'><%= el.title %></span>
+                <img class='poster' src='<%= el.image %>'/>
+                <span class='del'> Delete </span>
+            </li>
+    <% }) %>    
+    </ul>
+
+<!--     <form action="/movies/addMovie" method='POST'>
+        <input type="text" placeholder="Enter Movie Title" name='movieTitle'>
+        <input type="submit">
+    </form> -->
+  <h2>Search for Movies to add to your watchlist</h2>
+   <input id="movieSearch" type="text"/>
+  <button id="searchMovies">Search for movies</button>
+    <a href="/logout">Logout</a>
+      <ul></ul>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

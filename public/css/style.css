@@ -1,0 +1,66 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+h1{
+    color: red;
+    background-color: black;
+    font-family; Georgia,Times, serif
+}
+p {
+  color: white;
+  font-weight: bold;
+}
+div {
+  font-weight: 600;
+}
+span {
+  font-weight: lighter;
+}
+a.link {
+  color: blue;
+}
+a.visited {
+  color: purple
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: underline;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.poster{
+  width: 200px;
+}
+.yourMovies {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.movieLi {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 25px;
+  gap: 5px;
+  border: 1px solid black;
+}
+
+.movieItem {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 25px;
+  gap: 5px;
+  border: 1px solid black;
+}
